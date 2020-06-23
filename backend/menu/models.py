@@ -4,9 +4,6 @@ from django.db import models
 
 class Item(models.Model):
     "Generated Model"
-    name = models.CharField(max_length=255,)
-    description = models.TextField()
-    image = models.URLField()
     category = models.ForeignKey(
         "menu.Category",
         null=True,
@@ -40,7 +37,6 @@ class ItemVariant(models.Model):
 
 class Category(models.Model):
     "Generated Model"
-    name = models.CharField(max_length=255,)
     description = models.TextField()
     image = models.URLField()
     icon = models.URLField()

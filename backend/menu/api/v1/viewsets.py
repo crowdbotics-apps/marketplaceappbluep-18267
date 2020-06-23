@@ -1,22 +1,7 @@
 from rest_framework import authentication
-from menu.models import ItemVariant, Country, Item, Category, Review
-from .serializers import (
-    ItemVariantSerializer,
-    CountrySerializer,
-    ItemSerializer,
-    CategorySerializer,
-    ReviewSerializer,
-)
+from menu.models import Category, Country, ItemVariant
+from .serializers import CategorySerializer, CountrySerializer, ItemVariantSerializer
 from rest_framework import viewsets
-
-
-class ItemViewSet(viewsets.ModelViewSet):
-    serializer_class = ItemSerializer
-    authentication_classes = (
-        authentication.SessionAuthentication,
-        authentication.TokenAuthentication,
-    )
-    queryset = Item.objects.all()
 
 
 class CountryViewSet(viewsets.ModelViewSet):
@@ -44,12 +29,3 @@ class CategoryViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Category.objects.all()
-
-
-class ReviewViewSet(viewsets.ModelViewSet):
-    serializer_class = ReviewSerializer
-    authentication_classes = (
-        authentication.SessionAuthentication,
-        authentication.TokenAuthentication,
-    )
-    queryset = Review.objects.all()
