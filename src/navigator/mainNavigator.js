@@ -10,7 +10,6 @@ import BlankScreen4170153Navigator from '../features/BlankScreen4170153/navigato
 import BlankScreen4070152Navigator from '../features/BlankScreen4070152/navigator';
 import Maps70118Navigator from '../features/Maps70118/navigator';
 import Maps70113Navigator from '../features/Maps70113/navigator';
-import UserProfile70109Navigator from '../features/UserProfile70109/navigator';
 import MessengerNavigator from '../features/Messenger/navigator';
 import TutorialNavigator from '../features/Tutorial/navigator';
 import MapsNavigator from '../features/Maps/navigator';
@@ -32,7 +31,6 @@ BlankScreen4170153: { screen: BlankScreen4170153Navigator },
 BlankScreen4070152: { screen: BlankScreen4070152Navigator },
 Maps70118: { screen: Maps70118Navigator },
 Maps70113: { screen: Maps70113Navigator },
-UserProfile70109: { screen: UserProfile70109Navigator },
 Messenger: { screen: MessengerNavigator },
 Tutorial: { screen: TutorialNavigator },
 Maps: { screen: MapsNavigator },
