@@ -41,9 +41,9 @@ urlpatterns = [
     path("delivery_user_profile/", include("delivery_user_profile.urls")),
 ]
 
-admin.site.site_header = "MarketplaceAppBlueprint"
-admin.site.site_title = "MarketplaceAppBlueprint Admin Portal"
-admin.site.index_title = "MarketplaceAppBlueprint Admin"
+admin.site.site_header = "Tst-MarketplaceApp"
+admin.site.site_title = "Tst-MarketplaceApp Admin Portal"
+admin.site.index_title = "Tst-MarketplaceApp Admin"
 
 # swagger
 schema_view = get_schema_view(
